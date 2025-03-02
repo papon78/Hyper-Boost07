@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\device-width, initial-scale=1.0">
+    <title>Hyper Boost - Professional E-commerce</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        header {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        .menu-icon {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            position: absolute;
+            top: 15px;
+            right: 20px;
+        }
+        nav {
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ff6600;
+        }
+        .hidden {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .menu-icon {
+                display: block;
+            }
+            nav ul {
+                display: none;
+                flex-direction: column;
+                background-color: #1f1f1f;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                padding: 10px 0;
+            }
+            nav ul.active {
+                display: flex;
+            }
+        }
+        section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1200x500') no-repeat center center/cover;
+            padding: 100px 20px;
+            text-align: center;
+            color: white;
+        }
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 18px;
+        }
+        footer {
+            background-color: #1f1f1f;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .whatsapp-float img {
+            width: 32px;
+            height: 32px;
+        }
+        .products {
+            text-align: left;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .products ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .products li {
+            background: #1f1f1f;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hyper Boost</h1>
+        <span class="menu-icon" onclick="toggleMenu()">☰</span>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <h2>Welcome to Hyper Boost</h2>
+        <p>Your one-stop shop for premium services.</p>
+    </section>
+    
+    <section id="products" class="products">
+        <h2>Our Products</h2>
+        <ul>
+            <li>Facebook Reaction | Like 👍 Real Quality | No Refill⚡ 1K-3K/Days</li>
+            <li>Facebook Reaction | Love❤️ Real Quality | No Refill⚡ 1K-3K/Days</li>
+            <li>Facebook Reaction | Wow😲 Real Quality | No Refill⚡ 1K-3K/Days</li>
+            <li>Facebook Reaction | Care🤗 Real Quality | No Refill⚡ 1K-3K/Days</li>
+            <li>Facebook Reaction | Haha😂 Real Quality | No Refill⚡ 1K-3K/Days</li>
+            <li>Facebook Reaction | Sad😥 Real Quality | No Refill⚡ 1K-3K/Days</li>
+            <li>Facebook Reaction | Angry😡 Real Quality | No Refill⚡ 1K-3K/Days</li>
+            <li>YouTube Subscribers | High Quality | Lifetime ♻️ 100-200/Days</li>
+            <li>YouTube Subscribers | Super Fast | High Quality | Lifetime Refill ♻️🚀 500-2K/Days</li>
+            <li>TikTok Free Views 🔥 Fully Free Service ⭐</li>
+            <li>Instagram Free Views 🔥 Fully Free Service ⭐</li>
+        </ul>
+    </section>
+    
+    <a href="https://wa.me/8801712627336" target="_blank" class="whatsapp-float">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+    
+    <footer>
+        <p>&copy; 2025 Hyper Boost. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        function toggleMenu() {
+            document.getElementById("nav-menu").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
